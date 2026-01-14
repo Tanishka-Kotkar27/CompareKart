@@ -1,0 +1,54 @@
+
+ span{
+      font-weight: 650;
+      font-size: larger;
+      color: rgb(86, 85, 85);
+    }
+    #compare{
+      color: #3b5cc9;
+    }
+    .btn{
+    background-color: white;
+    font-weight: 400;
+    }
+    .homeb:hover{
+      padding: 9px 15px;
+    }
+    .catog:hover{
+      background :linear-gradient(to right, #1a2db8, #4a6cf7);
+      text-decoration: none;
+       color: #0a0f8f;
+       border: 1px solid #0a0f8f;
+    }
+    .footer {
+  background: linear-gradient(135deg, #020b8f, #02044a);
+  color: white;
+  padding: 50px 100px;
+
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+.footer-col p{
+  font-size: 14px;
+  line-height: 1.7;
+}
+.link{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.footer-col p{
+  text-align: start;
+}

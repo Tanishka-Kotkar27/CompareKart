@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .catog{
+        border: 1px solid #1a2db8;
+    }
+    .catog:hover{
+        color: white;
+    }
+    .content{
+      margin: 0px;
+      width: 100%;
+      height: 300px;
+      background: linear-gradient(to right,#0a0f8f,#3b5cc9,#5f8fd6);
+    }
+        h1{
+      color: white;
+      text-align: start;
+      font-weight: 600;
+      font-size: 45px;
+      padding-top: 130px;
+      margin-left: 100px;
+    }
+    p{
+      margin-top: 10px;
+      text-align: start;
+      color: white;
+      font-size: 17px;
+      font-weight: 400;
+      margin-left: 160px;
+    }
+    .select{
+      display: flex;  
+      justify-content: center;
+      background-color: #f1f2f4;
+    }
+    .btn1{
+      border:1px, solid, rgb(189, 186, 186);
+      padding: 8px 10px;
+      align-self: center;
+      width: 16rem;
+      background-color: white;
+      border-radius: 10px;
+      color: gray;
+    }
+    .card{
+      margin:30px 20px;
+    }
+     .comparetable {
+      border-radius: 30px;
+      overflow: hidden;     
+      margin:40px 90px;
+      border: 1px solid #ddd;
+    }
+    .text{
+      text-align: center;
+    }
+    .comparetable th,
+    .comparetable td {
+       padding: 15px;
+        border-bottom: none
+     }
+     .text1{
+      font-size: large;
+      font-weight: 400;
+      margin-left: 5px;
+     }
+.footer-col p,
+.footer-col h3{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.best-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 30px;
+  border-radius: 16px;
+  background: linear-gradient(to right, #0b1fa6, #6fa6da);
+  color: white;
+  margin:0px 90px;
+  margin-bottom: 100px;
+}
+.best-value h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.best-value p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.best-value .right {
+  text-align: right;
+}
+.best-value .right h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.best-value .right p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+  </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" >
+      <img width="50" height="50" src="https://img.icons8.com/nolan/64/shopping-cart-loaded.png" alt="shopping-cart-loaded" class="d-inline-block align-text-top " style="margin-top: -10px;"/>
+      <span id="compare">Compare</span><span>Kart</span>
+    </a>
+    <div class="btn-grp1">
+      <button class="btn  catog" onclick='location.href="index.html"' >🏠︎ Home</button>
+      <button class="btn catog" onclick='location.href="compare.html"'>📱 Mobile</button>
+      <button class="btn catog" onclick='location.href="laptop.html"'>💻 Laptop</button> 
+      <button class="btn  btn-light bg-light homeb" style="background :linear-gradient(to right, #1a2db8, #4a6cf7); color: white;">🚗 Cars</button> 
+      <button class="btn catog">📺 Appliances</button>
+    </div>
+  </div>
+</nav>
+<div class="content">
+<h1><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/FFFFFF/swap.png" alt="swap"/> Compare Devices</h1>
+<p>Side-by-side comparison of specs and features</p>
+</div>
+<div class="select">
+  <div class="card" style="width: 18rem; height: 250px;">
+  <img src="https://www.indiacarnews.com/wp-content/uploads/2023/02/New-Tata-Nexon-2024.jpg" height="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="margin-top: -10px;">Tata Nexon</h5>
+  </div>
+</div>
+
+  <div class="card" style="width: 18rem; height: 250px;">
+  <img src="https://imagecdnsa.zigwheels.ae/large/gallery/exterior/39/2049/suzuki-grand-vitara-front-angle-low-view-587545.jpg" class="card-img-top" height="200px" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="margin-top: -10px;">Maruti Suzuki Grand Vitara</h5>
+  </div>
+</div>
+  <div class="card" style="width: 18rem; height: 250px;">
+  <img src="images/plan.png" class="card-img-top" height="200px" style="padding: 15px; padding-top: 20px;" alt="...">
+  <div class="card-body">
+    <div class="dropdown">
+  <button class="btn1 dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Select Product
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+<li><a class="dropdown-item" href="#">Tata Harrier</a></li>
+<li><a class="dropdown-item" href="#">Tata Safari</a></li>
+<li><a class="dropdown-item" href="#">Hyundai Verna</a></li>
+<li><a class="dropdown-item" href="#">Hyundai Venue</a></li>
+<li><a class="dropdown-item" href="#">Kia Sonet</a></li>
+<li><a class="dropdown-item" href="#">Toyota Innova Hycross</a></li>
+<li><a class="dropdown-item" href="#">Toyota Fortuner</a></li>
+<li><a class="dropdown-item" href="#">MG Hector</a></li>
+<li><a class="dropdown-item" href="#">MG Astor</a></li>
+<li><a class="dropdown-item" href="#">Renault Kiger</a></li>
+<li><a class="dropdown-item" href="#">Nissan Magnite</a></li>
+  </ul>
+</div>
+  </div>
+</div>
+
+  <div class="card" style="width: 18rem; height: 250px;">
+  <img src="images/plan.png" class="card-img-top" height="200px" style="padding: 15px; padding-top: 20px;" alt="...">
+  <div class="card-body">
+    <div class="dropdown">
+  <button class="btn1 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Select Product
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+   <li><a class="dropdown-item" href="#">Tata Nexon</a></li>
+<li><a class="dropdown-item" href="#">Maruti Suzuki Grand Vitara</a></li>
+<li><a class="dropdown-item" href="#">Hyundai Creta</a></li>
+<li><a class="dropdown-item" href="#">Kia Seltos</a></li>
+<li><a class="dropdown-item" href="#">Toyota Urban Cruiser Hyryder</a></li>
+<li><a class="dropdown-item" href="#">Mahindra XUV700</a></li>
+<li><a class="dropdown-item" href="#">Mahindra Scorpio-N</a></li>
+<li><a class="dropdown-item" href="#">Honda City</a></li>
+<li><a class="dropdown-item" href="#">Skoda Slavia</a></li>
+<li><a class="dropdown-item" href="#">Volkswagen Virtus</a></li>
+<li><a class="dropdown-item" href="#">Maruti Suzuki Brezza</a></li>
+  </ul>
+</div>
+  </div>
+</div>
+</div>
+
+<div class="comparetable">
+  <table class="table  table-striped">
+<tr><th colspan="3" style="font-size: 25px; font-weight: 500;">Detailed Comparison</th></tr>
+<tr><td class="text1">Specification</td> <td class="text"> <img src="https://www.indiacarnews.com/wp-content/uploads/2023/02/New-Tata-Nexon-2024.jpg" height="100px" width="150px" alt=""> <br>Tata Nexon</td> <td class="text"><img src="https://imagecdnsa.zigwheels.ae/large/gallery/exterior/39/2049/suzuki-grand-vitara-front-angle-low-view-587545.jpg" height="100px" width="150px" alt=""> <br>Maruti Suzuki Grand Vitara</td></tr>
+<tr><td class="text1">Brand</td> <td class="text">Tata</td> <td class="text">Maruti Suzuki</td></tr>
+<tr><td class="text1">Price</td> <td class="text" style="font-size: larger; font-weight: 500;">₹8,50,000</td> <td class="text" style="font-size: larger; font-weight: 500;">₹10,70,000</td></tr>
+<tr><td class="text1">Rating</td> <td class="text">4.5</td> <td class="text">4.7</td></tr>
+<tr><td class="text1">Engine</td> <td class="text">1.5L Petrol / Diesel</td> <td class="text">1.5L Smart Hybrid</td></tr>
+<tr><td class="text1">Seating Capacity</td> <td class="text">5</td> <td class="text">5</td></tr>
+<tr><td class="text1">Safety</td> <td class="text">6 Airbags, ABS, ESC</td> <td class="text">6 Airbags, ABS, ESP</td></tr>
+<tr><td class="text1">Transmission</td> <td class="text">Manual / Automatic</td> <td class="text">Automatic / Manual</td></tr>
+<tr><td class="text1">Infotainment Display</td> <td class="text">10.25" Touchscreen</td> <td class="text">9" SmartPlay Studio</td></tr>
+<tr><td class="text1">Fuel Type</td> <td class="text">Petrol / Diesel</td> <td class="text">Petrol Hybrid</td></tr>
+<tr><td class="text1">Top Speed</td> <td class="text">~175 kmph</td> <td class="text">~180 kmph</td></tr>
+</table>
+</div>
+
+<div class="best-value">
+  <div class="left">
+    <h3>✓ Best Value Pick</h3>
+    <p>Based on price-to-performance ratio and ratings</p>
+  </div>
+  <div class="right">
+    <h4>Maruti Suzuki</h4>
+    <p>Maruti Suzuki Grand Vitara</p>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3 class="logo">CompareKart</h3>
+      <p>
+        Your trusted platform for comparing the <br> best tech devices and home appliances. <br>
+        Make informed decisions with <br> comprehensive specs and competitive pricing.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="" class="link">Home</a> <br>
+      <a href=""class="link">Mobiles</a> <br>
+      <a href=""class="link">Laptops</a> <br>
+      <a href=""class="link">Cars</a> <br>
+      <a href=""class="link">Appliances</a>
+    </div>
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>📍 123 Tech Street, Mumbai, Maharashtra 400001</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ support@comparekart.com</p>
+    </div>
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/facebook-new.png" alt="facebook-new"/></a>
+        <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/twitter-circled--v1.png" alt="twitter-circled--v1"/></a>
+        <a href=""><img width="30" height="30" src="https://img.icons8.com/windows/32/FFFFFF/instagram-new.png" alt="instagram-new"/></a>
+       <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png" alt="linkedin"/></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
