@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | CompareKart</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    .navbar{
+    background-color: #efeeee;
+}
+  </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    
+  <nav class="navbar fixed-top navbar-light" id="navb">
+  <div  class="container-fluid">
+    <a class="navbar-brand" id="logo" href="#" >
+      <img width="50" height="50" src="https://img.icons8.com/nolan/64/shopping-cart-loaded.png" alt="shopping-cart-loaded" class="d-inline-block align-text-top " style="margin-top: -10px;"/>
+      <span id="compare">Compare</span><span>Kart</span>
+    </a>
+    <div class="btn-grp1">
+      <button class="btn btn-light bg-light homeb" style="background :linear-gradient(to right, #1a2db8, #4a6cf7); color: white;">Login</button> 
+      <button class="btn catog">Sign Up</button>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Login Section -->
+    <section  class="login-section">
+        <div id="login" class="login-card">
+            <h2 class="h2">Welcome🤗</h2>
+
+            <form>
+                <div class="input-group">
+                    <label class="lab">Username</label>
+                    <input type="text" id="user" placeholder="Enter your username " required>
+                </div>
+
+                <div class="input-group">
+                    <label class="lab2">Password</label>
+                    <input type="password" id="pass" placeholder="Enter your password" required>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="for">Forgot password?</a>
+                </div>
+
+                <button type="button"  onclick="login()" class="login-btn">Login</button>
+                
+
+                <p class="register-text">
+                    Don’t have an account? <a href="#" class="reg">Register</a>
+                </p>
+            </form>
+            <p id="msg"></p>
+        </div>
+    </section>
+    <div id="themeToggle" onclick="toggleTheme()">
+        <svg id="moonIcon" viewBox="0 0 24 24" aria-hidden="true">
+             <path d="M12 2a10 10 0 0 0 0 20c2.8 0 5.3-1.1 7.1-2.9A8 8 0 0 1 12 4z"/>
+        </svg>
+    </div>
+
+</body>
+</html>
+
+
+ <!-- <h2>Login Validation </h2>
+
+    Username : <input type="text" id="user" placeholder="username">  <br><br>
+    Password : <input type="password" name="" id="pass" placeholder="password"> <br><br>
+
+    <button onclick="login()">Login</button>
+    <p id="msg"></p>
+    
+    <script>
+        function login()
+        {
+            let u=document.getElementById("user").value;
+            let p=document.getElementById("pass").value;
+
+            if(u === "admin" && p==="1234")
+        {
+            document.getElementById("msg").innerText="Login successfully ..."
+        }else{
+        document.getElementById("msg").innerText="In valid credential. "
+        }
+        } -->

@@ -1,3 +1,162 @@
+#themeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #424141;   
+    cursor: pointer;
+}
+#moonIcon {
+    width: 22px;
+    height: 22px;
+    fill: white;               
+}
+
+
+
+
+.price-row {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+.price {
+    margin: 0;
+    font-size: 22px;
+    color: #1f3cff;
+}
+
+.emi-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background: white;
+    color: #1f3cff;
+    cursor: pointer;
+}
+.emi-btn:hover{
+    font-size: 15px;
+}
+
+.emi-result {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+
+
+
+.catog:hover{
+    color: white;
+}
+.catog{
+    border: 1px solid #1a2db8;
+    color: #1a2db8;
+}
+.btn-grp1 button{
+    margin: 0px 5px;
+}
+.btn-grp1 {
+    display: flex;
+    align-items: center;    
+    gap: 10px;               
+}
+.login-section {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card {
+    background: white;
+    padding: 35px;
+    width: 360px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.login-card h2 {
+    margin-bottom: 5px;
+    color: #1f3cff;
+}
+.login-card p {
+    color: #555;
+    margin-bottom: 25px;
+}
+.input-group {
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-size: 14px;
+    color: #333;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.options a {
+    color: #1f3cff;
+    text-decoration: none;
+}
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #1f3cff;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background: #162dcc;
+}
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.register-text a {
+    color: #1f3cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* home  */
+#avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #6377be;   
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
 
  span{
       font-weight: 650;

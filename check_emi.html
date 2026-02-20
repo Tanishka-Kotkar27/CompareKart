@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loan-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loan-card {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.loan-card h3 {
+    color: #1f3cff;
+    margin-bottom: 20px;
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-size: 14px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+}
+.calc-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #1f3cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.calc-btn:hover {
+    background: #162dcc;
+}
+.result {
+    margin-top: 18px;
+    text-align: left;
+}
+.result p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+.btn-grp1 button:hover{
+    color: white;
+}
+
+  </style>
+</head>
+<body>
+      <nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" >
+      <img width="50" height="50" src="https://img.icons8.com/nolan/64/shopping-cart-loaded.png" alt="shopping-cart-loaded" class="d-inline-block align-text-top " style="margin-top: -10px;"/>
+      <span id="compare">Compare</span><span>Kart</span>
+    </a>
+    <div class="btn-grp1">
+      <button class="btn catog" onclick='location.href="index.html"'>🏠︎ Home</button>
+      <button class="btn catog" onclick='location.href="compare.html"'>📱 Mobile</button>
+      <button class="btn catog" onclick='location.href="laptop.html"'>💻 Laptop</button> 
+      <button class="btn catog" onclick='location.href="car.html"'>🚗 Cars</button> 
+      <div id="avatar">TK</div>
+    </div>
+  </div>
+</nav>
+
+<div class="loan-wrapper">
+    <div class="loan-card">
+
+        <h3><b> Loan Calculator 💰</b></h3>
+
+        <div class="input-group">
+            <label>Loan Amount (₹)</label>
+            <input style="border-radius: 8px;" class="in" type="number" id="amount" placeholder="Enter loan amount">
+        </div>
+
+        <div class="input-group">
+            <label>Interest Rate (%)</label>
+            <input style="border-radius: 8px;"class="in" type="number" id="rate" value="9">
+        </div>
+
+        <div class="input-group">
+            <label>Tenure (Years)</label>
+            <input style="border-radius: 8px;" class="in" type="number" id="years" value="3">
+        </div>
+
+        <button class="calc-btn" onclick="calculateEMI()">Calculate EMI</button>
+
+        <div class="result">
+            <p>Monthly EMI: <span id="emi">—</span></p>
+            <p>Total Interest: <span id="interest">—</span></p>
+            <p>Total Amount: <span id="total">—</span></p>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
