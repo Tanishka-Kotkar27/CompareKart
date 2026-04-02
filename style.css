@@ -1,0 +1,434 @@
+/* Global Styles */
+:root {
+    --primary-color: #1a2db8;
+    --secondary-color: #4a6cf7;
+    --dark-blue: #0a0f8f;
+    --light-gray: #f1f2f4;
+    --white: #ffffff;
+    --text-gray: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Common Components (Shared styles that don't conflict with originals) */
+.price {
+    color: #1a2db8 !important;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+/* Navbar Styles */
+.btn-grp1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 991px) {
+    .btn-grp1 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 5px 0;
+        width: 100%;
+    }
+    
+    .btn-grp1 .btn {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px !important;
+        border: none !important;
+        border-bottom: 1px solid #eee !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        color: #333 !important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .btn-grp1 .btn:last-child {
+        border-bottom: none !important;
+    }
+
+    .btn-grp1 .btn:hover {
+        background-color: #f8f9ff !important;
+        color: #1a2db8 !important;
+    }
+
+    /* Active state for mobile menu */
+    .btn-grp1 .homeb {
+        background-color: #f0f3ff !important;
+        color: #1a2db8 !important;
+        border-left: 4px solid #1a2db8 !important;
+    }
+
+    #avatar {
+        display: none !important; /* Remove from hamburger */
+    }
+    
+    .navbar-collapse {
+        background-color: white;
+        padding: 0;
+        border-radius: 0 0 12px 12px;
+        margin-top: 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        border-top: 1px solid #eee;
+    }
+}
+
+.btn {
+    border: 1px solid #1a2db8 !important;
+    color: #1a2db8;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a2db8 !important;
+    color: white !important;
+}
+
+.navbar .btn {
+    border: 1px solid #1a2db8;
+    color: #1a2db8;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+    background-color: #1a2db8 !important;
+    color: white !important;
+}
+
+/* Ensure consistent styles for the active button across pages */
+.navbar .homeb {
+    background: linear-gradient(to right, #1a2db8, #4a6cf7) !important;
+    color: white !important;
+    border: none !important;
+}
+
+#avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #6377be;   
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 10px;
+}
+
+#themeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #424141;   
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#moonIcon {
+    width: 22px;
+    height: 22px;
+    fill: white;               
+}
+
+.emi-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background: white;
+    color: #1f3cff;
+    cursor: pointer;
+    border: 1px solid #1f3cff;
+    border-radius: 4px;
+}
+
+.emi-btn:hover {
+    font-size: 15px;
+    background-color: #1f3cff;
+    color: white;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;      
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+/* Footer (Base) */
+.footer {
+  background: linear-gradient(135deg, #020b8f, #02044a);
+  color: white;
+  padding: 50px 100px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+.footer-col p{
+  font-size: 14px;
+  line-height: 1.7;
+}
+.link{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.social-icons span {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.footer-col p{
+  text-align: start;
+}
+
+/* Responsive Overrides (Mobile and Tablet ONLY) */
+@media (max-width: 1023px) {
+    .content {
+        margin: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 400px !important;
+        padding: 100px 20px 50px 20px !important;
+        text-align: center !important;
+    }
+
+    .content h1 {
+        font-size: 2.2rem !important;
+        padding-top: 20px !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .content p {
+        font-size: 1rem !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .content br {
+        display: none !important;
+    }
+
+    .btn-group {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    .features {
+        height: auto !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 40px 10px !important;
+    }
+
+    .smartphone, .Laptops {
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 20px !important;
+        gap: 15px !important;
+    }
+
+    .view, .view1 {
+        margin: 0 !important;
+        width: 120px !important;
+        align-self: center !important;
+    }
+
+    .d1 {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        margin-top: 10px !important;
+        padding: 10px !important;
+    }
+
+    .d1 .card {
+        width: 100% !important;
+        max-width: 22rem !important;
+        height: auto !important;
+        margin: 10px 0 !important;
+    }
+
+    .comparetable {
+        margin: 15px !important;
+        overflow-x: auto !important;
+    }
+
+    .best-value {
+        margin: 20px !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+    }
+
+    .best-value .right {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding: 40px 20px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 30px !important;
+    }
+
+    .footer-col p {
+        text-align: center !important;
+    }
+
+    .social-icons {
+        justify-content: center !important;
+    }
+
+    .select {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+
+    .select .card {
+        margin: 10px !important;
+    }
+
+    .login-section {
+        margin-top: 100px !important;
+    }
+
+    .loan-wrapper {
+        padding: 100px 20px 40px 20px !important;
+    }
+
+    /* Hide product image sizes on mobile */
+    .card img {
+        height: auto !important;
+        max-height: 200px !important;
+        object-fit: contain !important;
+        padding: 10px !important;
+    }
+
+    /* Hide the blue header box on mobile/tablet for comparison pages */
+    .compare-page .content {
+        display: none !important;
+    }
+}
+
+/* Back Button Styles */
+.back-nav {
+    display: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+    padding: 12px 20px;
+    margin-top: 70px; /* Offset for fixed navbar */
+    position: sticky;
+    top: 70px;
+    z-index: 998;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #1a2db8;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.back-link:hover {
+    color: #0a0f8f;
+    transform: translateX(-3px);
+}
+
+@media (max-width: 1023px) {
+    .back-nav {
+        display: block;
+    }
+    
+    /* Adjust content top padding for mobile to account for back-nav */
+    .content {
+        padding-top: 40px !important; /* Reduced because back-nav handles spacing */
+    }
+    
+    .loan-wrapper {
+        padding-top: 20px !important;
+    }
+    
+    .login-section {
+        margin-top: 40px !important;
+    }
+}
+    .input-group {
+        margin-top: 15px !important;
+        text-align: left !important;
+        margin-bottom: 15px !important;
+    }
+
+    .input-group label {
+        font-size: 14px !important;
+        color: #333 !important;
+    }
+
+    .input-group input {
+        width: 100% !important;
+        padding: 10px !important;
+        margin-top: 5px !important;
+        border-radius: 8px !important;
+        border: 1px solid #ccc !important;
+    }
+
+    .login-btn, .calc-btn {
+        width: 100% !important;
+        padding: 12px !important;
+        border: none !important;
+        background: #1f3cff !important;
+        color: white !important;
+        border-radius: 10px !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+    }
+}
